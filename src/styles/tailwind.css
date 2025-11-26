@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors - Optimized Floor Plan Theme */
+    --color-background: #E5E7EB;
+    --color-background-solid: #E5E7EB;
+    --color-foreground: #374151;
+    --color-border: #D1D5DB;
+    --color-input: #F9FAFB;
+    --color-ring: #FBBF24;
+    
+    /* Card Colors - Modern White Theme */
+    --color-card: #F9FAFB;
+    --color-card-foreground: #374151;
+    
+    /* Popover Colors */
+    --color-popover: #F9FAFB;
+    --color-popover-foreground: #374151;
+    
+    /* Muted Colors - Refined Neutrals */
+    --color-muted: #F3F4F6;
+    --color-muted-foreground: #6B7280;
+    
+    /* Primary Colors - Dark Gray */
+    --color-primary: #374151;
+    --color-primary-foreground: #ffffff;
+    
+    /* Secondary Colors - Soft Yellow */
+    --color-secondary: #FBBF24;
+    --color-secondary-foreground: #374151;
+    
+    /* Accent Colors - Soft Yellow Highlights */
+    --color-accent: #FBBF24;
+    --color-accent-foreground: #374151;
+    
+    /* Success Colors - Calming Green */
+    --color-success: #22c55e;
+    --color-success-foreground: #ffffff;
+    
+    /* Warning Colors - Amber */
+    --color-warning: #f59e0b;
+    --color-warning-foreground: #ffffff;
+    
+    /* Error/Destructive Colors */
+    --color-error: #ef4444;
+    --color-error-foreground: #ffffff;
+    --color-destructive: #ef4444;
+    --color-destructive-foreground: #ffffff;
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    background: #E5E7EB;
+    background-attachment: fixed;
+    @apply text-foreground;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  /* Modern Card Effects */
+  .modern-card {
+    background: #F9FAFB;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .modern-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Equipment Monitor Optimized Styles */
+  .equipment-sidebar {
+    background: #F9FAFB;
+    border-right: 1px solid #D1D5DB;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.06);
+  }
+  
+  .equipment-card {
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    transition: all 200ms ease-in-out;
+    border-radius: 8px;
+  }
+  
+  .equipment-card:hover {
+    border-color: #9CA3AF;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-1px);
+  }
+  
+  .equipment-card.selected {
+    background: #374151;
+    border-color: #374151;
+    color: white;
+    box-shadow: 0 4px 12px rgba(55, 65, 81, 0.25);
+  }
+  
+  .floor-plan-container {
+    background: #E5E7EB;
+    min-height: 100vh;
+  }
+  
+  .floor-plan-viewer {
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  }
+  
+  .controls-panel {
+    background: rgba(249, 250, 251, 0.95);
+    backdrop-filter: blur(8px);
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .legend-panel {
+    background: rgba(249, 250, 251, 0.95);
+    backdrop-filter: blur(8px);
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .status-summary {
+    background: #F9FAFB;
+    border-top: 1px solid #D1D5DB;
+  }
+  
+  /* Enhanced Glass Effects */
+  .glass-card {
+    background: #F9FAFB;
+    backdrop-filter: blur(10px);
+    border: 1px solid #D1D5DB;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .glass-light {
+    background: rgba(249, 250, 251, 0.9);
+    backdrop-filter: blur(8px);
+    border: 1px solid #D1D5DB;
+  }
+  
+  /* Responsive Card Variants */
+  .responsive-card {
+    @apply modern-card rounded-lg p-4 md:p-6 lg:p-8;
+  }
+  
+  /* Interactive Button Effects */
+  .btn-modern {
+    @apply bg-primary text-primary-foreground rounded-lg px-6 py-3 font-medium transition-all duration-300;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-modern:hover {
+    @apply bg-accent text-accent-foreground;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .btn-outline-modern {
+    @apply border-2 border-primary text-primary bg-transparent rounded-lg px-6 py-3 font-medium transition-all duration-300;
+  }
+  
+  .btn-outline-modern:hover {
+    @apply bg-primary text-primary-foreground;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Enhanced Hover Effects */
+  .hover-lift-modern {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .hover-lift-modern:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  }
+  
+  .hover-glow-yellow {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .hover-glow-yellow:hover {
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
+  }
+  
+  /* Status Indicator Styles */
+  .status-success  {
+    @apply text-success border rounded-full px-3 py-1 text-sm font-medium;
+  }
+  .status-warning  {
+    @apply text-warning border rounded-full px-3 py-1 text-sm font-medium;
+  }
+  .status-error  {
+    @apply text-error border rounded-full px-3 py-1 text-sm font-medium;
+  }
+  
+  /* Grid Responsive Layouts */
+  .grid-responsive {
+    @apply grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+  }
+  
+  .grid-kpi {
+    @apply grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-6;
+  }
+  
+  /* Input Modern Styling */
+  .input-modern {
+    @apply bg-input border border-border rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground transition-all duration-300;
+    font-size: 16px;
+  }
+  
+  .input-modern:focus {
+    @apply outline-none ring-2 ring-accent border-accent;
+    box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.1);
+  }
+  
+  /* Typography Enhancements */
+  .text-responsive-sm {
+    font-size: clamp(0.875rem, 2vw, 1rem);
+  }
+  
+  .text-responsive-base {
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+  }
+  
+  .text-responsive-lg {
+    font-size: clamp(1.125rem, 3vw, 1.25rem);
+  }
+  
+  .text-responsive-xl {
+    font-size: clamp(1.25rem, 4vw, 1.5rem);
+  }
+  
+  .text-responsive-2xl {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+  }
+  
+  .text-responsive-3xl {
+    font-size: clamp(1.875rem, 6vw, 3rem);
+  }
+}
+
+@layer utilities {
+  /* Modern Animations */
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out;
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out;
+  }
+  
+  .animate-slide-right {
+    animation: slideRight 0.5s ease-out;
+  }
+  
+  /* Keyframes */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  @keyframes slideRight {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  /* Responsive Utilities */
+  .container-responsive {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* Custom Scrollbar - Modern */
+  .scrollbar-modern {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(251, 191, 36, 0.3) transparent;
+  }
+  
+  .scrollbar-modern::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scrollbar-modern::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .scrollbar-modern::-webkit-scrollbar-thumb {
+    background: rgba(251, 191, 36, 0.3);
+    border-radius: 4px;
+  }
+  
+  .scrollbar-modern::-webkit-scrollbar-thumb:hover {
+    background: rgba(251, 191, 36, 0.5);
+  }
+  
+  /* Shadow Variants - Modern */
+  .shadow-modern {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shadow-modern-lg {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  }
+  
+  .shadow-modern-xl {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Gradient Backgrounds */
+  .bg-gradient-modern {
+    background: #E5E7EB;
+  }
+  
+  .bg-gradient-accent {
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.1) 0%, rgba(55, 65, 81, 0.05) 100%);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+  }
+  
+  .modern-card {
+    border: 1px solid #d1d5db !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Dark mode support (if needed later) */
+@media (prefers-color-scheme: dark) {
+  /* Dark mode variables can be added here if needed */
+}
+
+/* Accessibility Enhancements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --color-border: #000000;
+    --color-muted: #000000;
+  }
+}
