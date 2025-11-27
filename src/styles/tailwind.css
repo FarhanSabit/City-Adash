@@ -20,8 +20,8 @@
     --color-accent-foreground: #FFFFFF; /* white */
     
     /* Background Colors */
-    --color-background: #F8FAFC; /* slate-50 - Ultra-light gray */
-    --color-foreground: #0F172A; /* slate-900 - Near-black text */
+    --color-foreground: #F8FAFC; /* slate-50 - Ultra-light gray */
+    --color-background: #0F172A; /* slate-900 - Near-black text */
     
     /* Surface Colors */
     --color-card: #FFFFFF; /* white - Content cards */
@@ -69,8 +69,8 @@
     --color-accent-foreground: #FFFFFF; /* white */
     
     /* Background Colors */
-    --color-background: #0F172A; /* slate-900 */
-    --color-foreground: #F8FAFC; /* slate-50 */
+    --color-foreground: #F8FAFC; /* slate-900 */
+    --color-background: #0b55a0; /* slate-50 */
     
     /* Surface Colors */
     --color-card: #1E293B; /* slate-800 */
