@@ -10,3 +10,34 @@ body {
   font-family: inherit;
   margin: unset;
 }
+
+/* Animation Utilities */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-in,
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.slide-in-up,
+.animate-slideInUp {
+  animation: slideInUp 0.3s ease-in-out;
+}
