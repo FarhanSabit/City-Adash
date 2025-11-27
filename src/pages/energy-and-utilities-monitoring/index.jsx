@@ -186,7 +186,7 @@ const EnergyAndUtilitiesMonitoring = () => {
       id: "ALT-005",
       severity: "info",
       title: "Renewable Energy Generation Active",
-      description: "Solar panels generating 420 kW, offsetting 28% of current facility consumption.",
+      description: "Solar panels generating 420 kW, offsetting 28% of current Annexconsumption.",
       location: "Building A - Rooftop",
       metric: "420 kW generation",
       timestamp: new Date(Date.now() - 6 * 3600000)

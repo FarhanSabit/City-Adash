@@ -19,7 +19,7 @@ const FilterPanel = ({ onApplyFilters, onResetFilters }) => {
     { value: 'main', label: 'Main Campus - Building A' },
     { value: 'north', label: 'North Wing - Building B' },
     { value: 'south', label: 'South Complex - Building C' },
-    { value: 'east', label: 'East Facility - Building D' }
+    { value: 'east', label: 'East Annex- Building D' }
   ];
 
   const utilityOptions = [
@@ -95,7 +95,7 @@ const FilterPanel = ({ onApplyFilters, onResetFilters }) => {
         <div className="border-t border-border p-4 space-y-4 animation-fade-in">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <Select
-              label="Facility Zone"
+              label="AnnexZone"
               options={facilityOptions}
               value={filters?.facility}
               onChange={(value) => handleFilterChange('facility', value)}

@@ -83,7 +83,7 @@ const Sidebar = () => {
       badge: null,
     },
     {
-      label: 'Facility Map',
+      label: 'AnnexMap',
       path: '/interactive-facility-map-interface',
       icon: 'Map',
       badge: null,
@@ -124,7 +124,7 @@ const Sidebar = () => {
               <Icon name="Building2" size={24} color="var(--color-primary)" />
             </div>
             {!isCollapsed && (
-              <span className="sidebar-logo-text">FacilityPro</span>
+              <span className="sidebar-logo-text">CityDash</span>
             )}
           </div>
           <button

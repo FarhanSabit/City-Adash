@@ -24,7 +24,7 @@ const AlertCounter = () => {
     <button
       onClick={handleAlertClick}
       className="relative flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-150 hover-lift"
-      aria-label={`${totalAlerts} facility alerts`}
+      aria-label={`${totalAlerts} Annexalerts`}
     >
       <div className="relative">
         <Icon name="Bell" size={20} color={getPriorityColor()} />

@@ -271,7 +271,7 @@ const Header = () => {
             <div className="absolute right-0 top-12 w-56 bg-popover border border-border rounded-md shadow-modal z-50">
                 <div className="p-3 border-b border-border">
                   <p className="text-sm font-medium text-foreground">John Smith</p>
-                  <p className="text-xs text-muted-foreground">Facility Manager</p>
+                  <p className="text-xs text-muted-foreground">AnnexManager</p>
                 </div>
                 <div className="py-2">
                   <button

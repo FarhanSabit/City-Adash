@@ -484,7 +484,7 @@ const TicketTrackingAndResolutionHub = () => {
                   Ticket Tracking & Resolution Hub
                 </h1>
                 <p className="text-sm text-muted-foreground">
-                  Manage and resolve facility issues efficiently
+                  Manage and resolve Annexissues efficiently
                 </p>
               </div>
               <div className="flex items-center gap-3 flex-shrink-0">

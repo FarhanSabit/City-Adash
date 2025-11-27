@@ -61,7 +61,7 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 1,
     name: 'Sarah Johnson',
-    email: 'sarah.johnson@facilitypro.com',
+    email: 'sarah.johnson@mmis_dash.com',
     employeeId: 'EMP-001',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_15b51d2e4-1763293833337.png",
     avatarAlt: 'Professional headshot of woman with blonde hair in navy blazer smiling at camera',
@@ -75,12 +75,12 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 2,
     name: 'Michael Chen',
-    email: 'michael.chen@facilitypro.com',
+    email: 'michael.chen@mmis_dash.com',
     employeeId: 'EMP-002',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_1665ca73c-1763296377705.png",
     avatarAlt: 'Professional headshot of Asian man with black hair in gray suit with confident expression',
     role: 'manager',
-    roleLabel: 'Facility Manager',
+    roleLabel: 'AnnexManager',
     department: 'Operations',
     permissionLevel: 'Department Admin',
     lastLogin: '2025-11-20 09:12 AM',
@@ -89,7 +89,7 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 3,
     name: 'Emily Rodriguez',
-    email: 'emily.rodriguez@facilitypro.com',
+    email: 'emily.rodriguez@mmis_dash.com',
     employeeId: 'EMP-003',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_1975607e9-1763295500639.png",
     avatarAlt: 'Professional headshot of Hispanic woman with dark hair in white blouse with warm smile',
@@ -103,7 +103,7 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 4,
     name: 'David Thompson',
-    email: 'david.thompson@facilitypro.com',
+    email: 'david.thompson@mmis_dash.com',
     employeeId: 'EMP-004',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_1219eacec-1763294869102.png",
     avatarAlt: 'Professional headshot of man with brown hair in blue shirt with friendly demeanor',
@@ -117,7 +117,7 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 5,
     name: 'Jessica Martinez',
-    email: 'jessica.martinez@facilitypro.com',
+    email: 'jessica.martinez@mmis_dash.com',
     employeeId: 'EMP-005',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_1f6971df1-1763296070381.png",
     avatarAlt: 'Professional headshot of woman with curly brown hair in red blazer with professional appearance',
@@ -131,12 +131,12 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 6,
     name: 'Robert Wilson',
-    email: 'robert.wilson@facilitypro.com',
+    email: 'robert.wilson@mmis_dash.com',
     employeeId: 'EMP-006',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_112265a85-1763292077934.png",
     avatarAlt: 'Professional headshot of man with gray hair in dark suit with executive presence',
     role: 'manager',
-    roleLabel: 'Facility Manager',
+    roleLabel: 'AnnexManager',
     department: 'Operations',
     permissionLevel: 'Department Admin',
     lastLogin: '2025-11-18 03:45 PM',
@@ -145,7 +145,7 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 7,
     name: 'Amanda Lee',
-    email: 'amanda.lee@facilitypro.com',
+    email: 'amanda.lee@mmis_dash.com',
     employeeId: 'EMP-007',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_1b1b32f79-1763293656871.png",
     avatarAlt: 'Professional headshot of Asian woman with long black hair in teal blouse with confident smile',
@@ -159,7 +159,7 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 8,
     name: 'James Anderson',
-    email: 'james.anderson@facilitypro.com',
+    email: 'james.anderson@mmis_dash.com',
     employeeId: 'EMP-008',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_1f7128937-1763299826636.png",
     avatarAlt: 'Professional headshot of man with blonde hair in light blue shirt with approachable expression',
@@ -173,7 +173,7 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 9,
     name: 'Maria Garcia',
-    email: 'maria.garcia@facilitypro.com',
+    email: 'maria.garcia@mmis_dash.com',
     employeeId: 'EMP-009',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_127e35b32-1763295517666.png",
     avatarAlt: 'Professional headshot of Hispanic woman with dark hair in purple top with warm demeanor',
@@ -187,7 +187,7 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 10,
     name: 'Christopher Brown',
-    email: 'christopher.brown@facilitypro.com',
+    email: 'christopher.brown@mmis_dash.com',
     employeeId: 'EMP-010',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_1a77e6824-1763296279560.png",
     avatarAlt: 'Professional headshot of man with dark hair in black shirt with serious professional look',
@@ -201,12 +201,12 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 11,
     name: 'Jennifer Taylor',
-    email: 'jennifer.taylor@facilitypro.com',
+    email: 'jennifer.taylor@mmis_dash.com',
     employeeId: 'EMP-011',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_10e3d1880-1763301823543.png",
     avatarAlt: 'Professional headshot of woman with red hair in green blouse with friendly smile',
     role: 'manager',
-    roleLabel: 'Facility Manager',
+    roleLabel: 'AnnexManager',
     department: 'Operations',
     permissionLevel: 'Department Admin',
     lastLogin: '2025-11-20 08:30 AM',
@@ -215,7 +215,7 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 12,
     name: 'Daniel Kim',
-    email: 'daniel.kim@facilitypro.com',
+    email: 'daniel.kim@mmis_dash.com',
     employeeId: 'EMP-012',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_1f111493f-1763295642622.png",
     avatarAlt: 'Professional headshot of Asian man with short black hair in white shirt with professional demeanor',
@@ -229,7 +229,7 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 13,
     name: 'Lisa Patel',
-    email: 'lisa.patel@facilitypro.com',
+    email: 'lisa.patel@mmis_dash.com',
     employeeId: 'EMP-013',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_1e14322e7-1763296357021.png",
     avatarAlt: 'Professional headshot of Indian woman with long dark hair in blue blazer with confident expression',
@@ -243,7 +243,7 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 14,
     name: 'Kevin White',
-    email: 'kevin.white@facilitypro.com',
+    email: 'kevin.white@mmis_dash.com',
     employeeId: 'EMP-014',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_11ad87da0-1763294621347.png",
     avatarAlt: 'Professional headshot of man with brown hair in gray polo shirt with casual professional look',
@@ -257,7 +257,7 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 15,
     name: 'Rachel Green',
-    email: 'rachel.green@facilitypro.com',
+    email: 'rachel.green@mmis_dash.com',
     employeeId: 'EMP-015',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_1985c262f-1763294244026.png",
     avatarAlt: 'Professional headshot of woman with blonde hair in pink blouse with bright smile',
@@ -271,7 +271,7 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 16,
     name: 'Thomas Harris',
-    email: 'thomas.harris@facilitypro.com',
+    email: 'thomas.harris@mmis_dash.com',
     employeeId: 'EMP-016',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_17eb2ca68-1763295028413.png",
     avatarAlt: 'Professional headshot of man with dark hair in navy suit with executive appearance',
@@ -285,12 +285,12 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 17,
     name: 'Nicole Davis',
-    email: 'nicole.davis@facilitypro.com',
+    email: 'nicole.davis@mmis_dash.com',
     employeeId: 'EMP-017',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_1954af0d8-1763297441684.png",
     avatarAlt: 'Professional headshot of woman with brown hair in yellow top with cheerful expression',
     role: 'manager',
-    roleLabel: 'Facility Manager',
+    roleLabel: 'AnnexManager',
     department: 'Operations',
     permissionLevel: 'Department Admin',
     lastLogin: '2025-11-20 08:45 AM',
@@ -299,7 +299,7 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 18,
     name: 'Brian Miller',
-    email: 'brian.miller@facilitypro.com',
+    email: 'brian.miller@mmis_dash.com',
     employeeId: 'EMP-018',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_1210fa420-1763291826720.png",
     avatarAlt: 'Professional headshot of man with light brown hair in green shirt with friendly demeanor',
@@ -313,7 +313,7 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 19,
     name: 'Stephanie Moore',
-    email: 'stephanie.moore@facilitypro.com',
+    email: 'stephanie.moore@mmis_dash.com',
     employeeId: 'EMP-019',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_1f29bba35-1763298667903.png",
     avatarAlt: 'Professional headshot of woman with dark hair in orange blouse with professional smile',
@@ -327,7 +327,7 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 20,
     name: 'Andrew Jackson',
-    email: 'andrew.jackson@facilitypro.com',
+    email: 'andrew.jackson@mmis_dash.com',
     employeeId: 'EMP-020',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_15b9af70c-1763295447546.png",
     avatarAlt: 'Professional headshot of man with black hair in burgundy shirt with confident look',
@@ -341,7 +341,7 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 21,
     name: 'Michelle Lewis',
-    email: 'michelle.lewis@facilitypro.com',
+    email: 'michelle.lewis@mmis_dash.com',
     employeeId: 'EMP-021',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_16fb6600f-1763295222357.png",
     avatarAlt: 'Professional headshot of woman with auburn hair in teal blazer with warm professional appearance',
@@ -355,12 +355,12 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 22,
     name: 'Steven Clark',
-    email: 'steven.clark@facilitypro.com',
+    email: 'steven.clark@mmis_dash.com',
     employeeId: 'EMP-022',
     avatar: "https://img.rocket.new/generatedImages/rocket_gen_img_14513944f-1763292856103.png",
     avatarAlt: 'Professional headshot of man with gray hair in charcoal suit with distinguished appearance',
     role: 'manager',
-    roleLabel: 'Facility Manager',
+    roleLabel: 'AnnexManager',
     department: 'Operations',
     permissionLevel: 'Department Admin',
     lastLogin: '2025-11-20 09:15 AM',
@@ -379,8 +379,8 @@ const SystemAdministrationAndUserManagement = () => {
   },
   {
     id: 2,
-    name: 'Facility Manager',
-    description: 'Manage facility operations and department resources',
+    name: 'AnnexManager',
+    description: 'Manage Annexoperations and department resources',
     icon: 'Building2',
     userCount: 15,
     permissions: ['user_view', 'wo_view', 'wo_create', 'wo_assign', 'wo_approve', 'wo_close', 'asset_view', 'asset_create', 'asset_edit', 'inventory_manage', 'report_view', 'report_create', 'report_export', 'analytics_view']
@@ -453,9 +453,9 @@ const SystemAdministrationAndUserManagement = () => {
     syncFrequency: 'Every 15 minutes',
     recordsSync: '247',
     config: [
-    { label: 'Server', value: 'ldap.facilitypro.com' },
+    { label: 'Server', value: 'ldap.mmis_dash.com' },
     { label: 'Port', value: '636 (SSL)' },
-    { label: 'Base DN', value: 'dc=facilitypro,dc=com' },
+    { label: 'Base DN', value: 'dc=CityDash,dc=com' },
     { label: 'Sync Method', value: 'Incremental' }],
 
     recentActivity: [
@@ -477,8 +477,8 @@ const SystemAdministrationAndUserManagement = () => {
     config: [
     { label: 'Identity Provider', value: 'Okta' },
     { label: 'Protocol', value: 'SAML 2.0' },
-    { label: 'Entity ID', value: 'facilitypro-prod' },
-    { label: 'ACS URL', value: 'https://app.facilitypro.com/sso/acs' }],
+    { label: 'Entity ID', value: 'CityDash-prod' },
+    { label: 'ACS URL', value: 'https://app.mmis_dash.com/sso/acs' }],
 
     recentActivity: [
     { status: 'connected', message: '156 successful SSO authentications', timestamp: '5 minutes ago' },
@@ -537,7 +537,7 @@ const SystemAdministrationAndUserManagement = () => {
   {
     id: 5,
     name: 'IoT Sensor Platform',
-    description: 'Real-time data ingestion from facility sensors and monitoring devices',
+    description: 'Real-time data ingestion from Annexsensors and monitoring devices',
     icon: 'Wifi',
     status: 'error',
     statusLabel: 'Connection Error',
@@ -608,7 +608,7 @@ const SystemAdministrationAndUserManagement = () => {
     user: 'Sarah Johnson',
     userId: 'EMP-001',
     userRole: 'admin',
-    details: 'Updated permissions for Facility Manager role',
+    details: 'Updated permissions for AnnexManager role',
     ipAddress: '192.168.1.45',
     severity: 'high'
   },

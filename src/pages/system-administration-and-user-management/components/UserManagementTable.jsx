@@ -14,7 +14,7 @@ const UserManagementTable = ({ users, onEditUser, onDeleteUser, onBulkAction }) 
   const roleOptions = [
     { value: 'all', label: 'All Roles' },
     { value: 'admin', label: 'Administrator' },
-    { value: 'manager', label: 'Facility Manager' },
+    { value: 'manager', label: 'AnnexManager' },
     { value: 'technician', label: 'Maintenance Technician' },
     { value: 'supervisor', label: 'Operations Supervisor' },
     { value: 'staff', label: 'Administrative Staff' }

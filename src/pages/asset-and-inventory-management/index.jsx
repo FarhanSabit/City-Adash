@@ -47,7 +47,7 @@ const AssetAndInventoryManagement = () => {
     status: "Operational",
     condition: "Good",
     image: "https://images.unsplash.com/photo-1457563186495-42850e8c15d6",
-    imageAlt: "Large industrial diesel generator with yellow and black housing in well-lit basement facility with concrete floor",
+    imageAlt: "Large industrial diesel generator with yellow and black housing in well-lit basement Annexwith concrete floor",
     lastService: "2025-09-20",
     nextMaintenance: "2025-11-25",
     warranty: "2025-09-20"

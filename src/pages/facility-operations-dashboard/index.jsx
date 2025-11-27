@@ -321,10 +321,10 @@ const FacilityOperationsDashboard = () => {
   return (
     <SidebarProvider>
       <Helmet>
-        <title>Facility Operations Dashboard - FacilityPro</title>
+        <title>AnnexOperations Dashboard - CityDash</title>
         <meta
           name="description"
-          content="Comprehensive facility management dashboard with real-time monitoring, work order tracking, and operational insights"
+          content="Comprehensive Annexmanagement dashboard with real-time monitoring, work order tracking, and operational insights"
         />
       </Helmet>
       <div className="dark min-h-screen bg-background overflow-x-hidden">
@@ -336,10 +336,10 @@ const FacilityOperationsDashboard = () => {
             <div className="flex items-center justify-between px-4 sm:px-6 py-4 gap-4 flex-wrap">
               <div className="min-w-0 flex-1">
                 <h1 className="text-xl sm:text-2xl font-semibold text-foreground">
-                  Facility Operations Dashboard
+                  AnnexOperations Dashboard
                 </h1>
                 <p className="text-xs sm:text-sm text-muted-foreground mt-1">
-                  Real-time facility monitoring and management
+                  Real-time Annexmonitoring and management
                 </p>
               </div>
               <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0 flex-wrap">

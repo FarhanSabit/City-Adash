@@ -34,8 +34,8 @@ const AnalyticsAndReportingDashboard = () => {
   const reportTemplates = [
     {
       id: 'RPT-001',
-      name: 'Facility Performance Overview',
-      description: 'Comprehensive analysis of facility operations, maintenance efficiency, and resource utilization',
+      name: 'AnnexPerformance Overview',
+      description: 'Comprehensive analysis of Annexoperations, maintenance efficiency, and resource utilization',
       category: 'Performance',
       icon: 'BarChart3',
       lastUsed: '2 hours ago',
@@ -92,35 +92,35 @@ const AnalyticsAndReportingDashboard = () => {
     {
       id: 'WO-001',
       name: 'Work Orders',
-      category: 'Facility Data',
+      category: 'AnnexData',
       recordCount: 15847,
       status: 'connected'
     },
     {
       id: 'TK-001',
       name: 'Tickets',
-      category: 'Facility Data',
+      category: 'AnnexData',
       recordCount: 8923,
       status: 'connected'
     },
     {
       id: 'AS-001',
       name: 'Assets',
-      category: 'Facility Data',
+      category: 'AnnexData',
       recordCount: 3456,
       status: 'connected'
     },
     {
       id: 'EN-001',
       name: 'Energy',
-      category: 'Facility Data',
+      category: 'AnnexData',
       recordCount: 52341,
       status: 'connected'
     },
     {
       id: 'WF-001',
       name: 'Workforce',
-      category: 'Facility Data',
+      category: 'AnnexData',
       recordCount: 287,
       status: 'connected'
     },
@@ -321,7 +321,7 @@ const AnalyticsAndReportingDashboard = () => {
   };
 
   useEffect(() => {
-    document.title = 'Analytics & Reporting Dashboard - FacilityPro';
+    document.title = 'Analytics & Reporting Dashboard - CityDash';
   }, []);
 
   return (
@@ -339,7 +339,7 @@ const AnalyticsAndReportingDashboard = () => {
                   Analytics & Reporting Dashboard
                 </h1>
                 <p className="text-sm text-muted-foreground">
-                  Transform facility data into actionable insights
+                  Transform Annexdata into actionable insights
                 </p>
               </div>
               <div className="flex items-center gap-3">
@@ -493,7 +493,7 @@ const AnalyticsAndReportingDashboard = () => {
                         </div>
                       </div>
 
-                      <DataTable data={tableData} columns={tableColumns} title="Facility Performance" />
+                      <DataTable data={tableData} columns={tableColumns} title="AnnexPerformance" />
                     </div>
                   ) : (
                     <div className="flex flex-col items-center justify-center h-96 text-center">
@@ -535,7 +535,7 @@ const AnalyticsAndReportingDashboard = () => {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <Icon name="Database" size={16} color="var(--color-success)" />
-                        <span className="text-sm text-foreground">Facility Systems</span>
+                        <span className="text-sm text-foreground">AnnexSystems</span>
                       </div>
                       <span className="text-xs text-success">Connected</span>
                     </div>
@@ -669,7 +669,7 @@ const AnalyticsAndReportingDashboard = () => {
               </div>
 
               {/* Data Table */}
-              <DataTable data={tableData} columns={tableColumns} title="Facility Performance Summary" />
+              <DataTable data={tableData} columns={tableColumns} title="AnnexPerformance Summary" />
             </div>
           )}
         </div>

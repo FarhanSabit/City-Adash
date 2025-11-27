@@ -4,7 +4,7 @@ import Icon from '../AppIcon';
 const UserRoleIndicator = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [userRole] = useState({
-    name: 'Facility Manager',
+    name: 'AnnexManager',
     level: 'Administrator',
     permissions: ['Full Access', 'User Management', 'System Configuration'],
   });

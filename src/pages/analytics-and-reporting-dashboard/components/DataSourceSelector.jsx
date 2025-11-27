@@ -3,7 +3,7 @@ import Icon from '../../../components/AppIcon';
 import { Checkbox } from '../../../components/ui/Checkbox';
 
 const DataSourceSelector = ({ sources, selectedSources, onSourceToggle }) => {
-  const [expandedCategories, setExpandedCategories] = useState(['Facility Data']);
+  const [expandedCategories, setExpandedCategories] = useState(['AnnexData']);
 
   const toggleCategory = (category) => {
     setExpandedCategories((prev) =>

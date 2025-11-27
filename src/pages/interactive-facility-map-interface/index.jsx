@@ -73,7 +73,7 @@ const InteractiveFacilityMapInterface = () => {
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
                 <Icon name="Map" size={24} color="var(--color-primary)" />
-                <h1 className="text-lg font-semibold text-foreground">Facility Map</h1>
+                <h1 className="text-lg font-semibold text-foreground">AnnexMap</h1>
               </div>
             </div>
 
