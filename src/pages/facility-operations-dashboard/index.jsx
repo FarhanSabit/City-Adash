@@ -8,7 +8,8 @@ import UserRoleIndicator from '../../components/ui/UserRoleIndicator';
 import QuickActionButton from '../../components/ui/QuickActionButton';
 import KPICard from './components/KPICard';
 import AlertFeed from './components/AlertFeed';
-import WorkOrdersTable from './components/WorkOrdersTable';
+import WorkOrderTable from './components/WorkOrderTable';
+
 import FilterToolbar from './components/FilterToolbar';
 import IntegrationStatus from './components/IntegrationStatus';
 import KeyboardShortcuts from './components/KeyboardShortcuts';
@@ -379,11 +380,12 @@ const FacilityOperationsDashboard = () => {
                 <AlertFeed alerts={alertsData} onAlertAction={handleAlertAction} />
               </div>
               <div className="lg:col-span-7 min-h-[500px]">
-                <WorkOrdersTable
+                <WorkOrderTable
                   workOrders={workOrdersData}
                   onStatusChange={handleStatusChange}
                   onAssign={handleAssign}
                 />
+
               </div>
             </div>
           </div>
