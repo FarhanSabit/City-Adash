@@ -1,101 +1,94 @@
 import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import Icon from '../AppIcon';
-import Button from './Button';
 
 const QuickActionButton = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
-  const quickActions = [
-    {
-      id: 'create-work-order',
-      label: 'Create Work Order',
-      icon: 'Plus',
-      color: 'bg-primary text-primary-foreground',
-      onClick: () => {
-        console.log('Create work order clicked');
-        setIsOpen(false);
-      }
-    },
-    {
-      id: 'report-issue',
-      label: 'Report Equipment Issue',
-      icon: 'AlertTriangle',
-      color: 'bg-warning text-warning-foreground',
-      onClick: () => {
-        console.log('Report issue clicked');
-        setIsOpen(false);
-      }
-    },
-    {
-      id: 'emergency-alert',
-      label: 'Emergency Alert',
-      icon: 'Siren',
-      color: 'bg-error text-error-foreground',
-      onClick: () => {
-        console.log('Emergency alert clicked');
-        setIsOpen(false);
-      }
-    },
-    {
-      id: 'quick-inspection',
-      label: 'Quick Inspection',
-      icon: 'CheckCircle',
-      color: 'bg-success text-success-foreground',
-      onClick: () => {
-        console.log('Quick inspection clicked');
-        setIsOpen(false);
-      }
+  const getContextActions = () => {
+    const path = location?.pathname;
+    
+    if (path?.includes('work-order')) {
+      return [
+        { label: 'New Work Order', icon: 'Plus', action: 'create-work-order' },
+        { label: 'Emergency Request', icon: 'AlertTriangle', action: 'emergency' },
+      ];
     }
-  ];
+    
+    if (path?.includes('ticket')) {
+      return [
+        { label: 'Submit Ticket', icon: 'Plus', action: 'create-ticket' },
+        { label: 'Report Issue', icon: 'AlertCircle', action: 'report-issue' },
+      ];
+    }
+    
+    if (path?.includes('asset')) {
+      return [
+        { label: 'Add Asset', icon: 'Plus', action: 'add-asset' },
+        { label: 'Schedule Maintenance', icon: 'Calendar', action: 'schedule' },
+      ];
+    }
 
-  const toggleActions = () => {
-    setIsOpen(!isOpen);
+    return [
+      { label: 'New Work Order', icon: 'Plus', action: 'create-work-order' },
+      { label: 'Submit Ticket', icon: 'Ticket', action: 'create-ticket' },
+      { label: 'Emergency Alert', icon: 'AlertTriangle', action: 'emergency' },
+    ];
   };
+
+  const handleAction = (action) => {
+    console.log('Quick action:', action);
+    setIsOpen(false);
+  };
+
+  const actions = getContextActions();
 
   return (
     <div className="fixed bottom-6 right-6 z-50">
-      {/* Action Menu */}
       {isOpen && (
-        <div className="absolute bottom-16 right-0 space-y-3 animate-slide-in">
-          {quickActions?.map((action, index) => (
-            <div
-              key={action?.id}
-              className="flex items-center justify-end space-x-3"
-              style={{ animationDelay: `${index * 50}ms` }}
-            >
-              <div className="bg-popover border border-border rounded-md px-3 py-2 shadow-modal opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <span className="text-sm text-popover-foreground whitespace-nowrap">
-                  {action?.label}
-                </span>
-              </div>
-              <Button
-                onClick={action?.onClick}
-                className={`h-12 w-12 rounded-full shadow-modal hover:scale-110 transition-all duration-200 group ${action?.color}`}
-              >
-                <Icon name={action?.icon} size={20} />
-              </Button>
+        <>
+          <div
+            className="fixed inset-0"
+            onClick={() => setIsOpen(false)}
+            aria-hidden="true"
+          />
+          <div className="absolute bottom-16 right-0 w-56 bg-card border border-border rounded-lg shadow-lg animation-scale-in">
+            <div className="p-2">
+              {actions?.map((action, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleAction(action?.action)}
+                  className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-muted transition-colors duration-150 text-left"
+                >
+                  <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10">
+                    <Icon
+                      name={action?.icon}
+                      size={16}
+                      color="var(--color-primary)"
+                    />
+                  </div>
+                  <span className="text-sm font-medium text-foreground">
+                    {action?.label}
+                  </span>
+                </button>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
+        </>
       )}
-      {/* Main Action Button */}
-      <Button
-        onClick={toggleActions}
-        className={`h-14 w-14 rounded-full shadow-modal hover:scale-110 transition-all duration-200 ${
-          isOpen 
-            ? 'bg-muted text-muted-foreground rotate-45' 
-            : 'bg-primary text-primary-foreground'
-        }`}
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex items-center justify-center w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-150 hover-lift"
+        aria-label="Quick actions"
+        aria-expanded={isOpen}
       >
-        <Icon name={isOpen ? "X" : "Plus"} size={24} />
-      </Button>
-      {/* Backdrop */}
-      {isOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-20 backdrop-blur-sm -z-10"
-          onClick={() => setIsOpen(false)}
+        <Icon
+          name={isOpen ? 'X' : 'Zap'}
+          size={24}
+          color="var(--color-primary-foreground)"
         />
-      )}
+      </button>
     </div>
   );
 };
